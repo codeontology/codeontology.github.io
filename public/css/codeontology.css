@@ -1,0 +1,26 @@
+/* Home sections */
+section.workflow h3,
+section.workflow a {
+    color: #0091ea;
+}
+
+section.datasets h3,
+section.datasets p a {
+    color: #8bab42;
+}
+
+
+/* Home sections */
+.btn-group.btn-group-justified.first a {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.btn-group.btn-group-justified.middle a {
+    border-radius: 0;
+}
+
+.btn-group.btn-group-justified.last a {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
