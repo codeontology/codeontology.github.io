@@ -6,22 +6,22 @@
 
 .panel-danger .prefix,
 .panel-danger .URI {
-    color: #e51c23;
+    color: #a94442;
 }
 
 .panel-warning .prefix,
 .panel-warning .URI {
-    color: #ff9800;
+    color: #8a6d3b;
 }
 
 .panel-info .prefix,
 .panel-info .URI {
-    color: #9c27b0;
+    color: #31708f;
 }
 
 .panel-success .prefix,
 .panel-success .URI {
-    color: #4caf50;
+    color: #3c763d;
 }
 
 .panel .structure,
@@ -31,38 +31,38 @@
 
 .panel-danger .structure,
 .panel-danger .properties {
-    border-color: #e51c23;
+    border-color: #a94442;
 }
 
 .panel-warning .structure,
 .panel-warning .properties {
-    border-color: #ff9800;
+    border-color: #8a6d3b;
 }
 
 .panel-info .structure,
 .panel-info .properties {
-    border-color: #9c27b0;
+    border-color: #31708f;
 }
 
 .panel-success .structure,
 .panel-success .properties {
-    border-color: #4caf50;
+    border-color: #3c763d;
 }
 
 .panel-danger .range {
-    color: #e51c23;
+    color: #a94442;
 }
 
 .panel-warning .range {
-    color: #ff9800;
+    color: #8a6d3b;
 }
 
 .panel-info .range {
-    color: #9c27b0;
+    color: #31708f;
 }
 
 .panel-success .range {
-    color: #4caf50;
+    color: #3c763d;
 }
 
 .range::before {
