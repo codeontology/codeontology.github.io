@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="public/css/bootstrap.min.css">
+<!-- Container -->
+<link rel="stylesheet" href="public/css/codeontology.css">
+
+<!-- jQuery -->
+<script src="public/js/jquery-1.10.2.min.js"></script>
+<!-- Bootstrap -->
+<script src="public/js/bootstrap.min.js"></script>
+<!-- Custom -->
+<script src="public/js/custom.js"></script>
+
+
+<title>CodeOntology</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+    <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">CodeOntology</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+        <li><a href="query.html">Query</a></li>
+        <li><a href="docs.html">Docs</a></li>
+        </ul>
+
+    </div>
+    </div>
+    </nav>
+
+    <div id="content" class="container">
+    <h2>CodeOntology</h2>
+
+    <blockquote>
+        <p>CodeOntology reaches the gap between source code and semantic web.<br/>
+        Developed at <a href="http://corsi.unica.it/informatica">Math/CS department</a> at <a href="https://unica.it">UniCA</a>,
+        it parses and analyses Java source code, generating rdf-compliant datasets over source code.</p>
+        <small>Abstract, <cite title="CodeOntology">CodeOntology</cite></small>
+    </blockquote>
+
+    <section class="workflow">
+        <h3>Workflow</h3>
+        <p>CodeOntology analyses Java repositories, provided they are syntatically and semantically correct.
+        We support native Gradle and Maven build tools, and other build tools, provided valid classpaths are provided.</p>
+
+        <figure>
+        <img alt="CodeOntology workflow" src="public/images/workflow.svg" />
+        <br/>
+        <figcaption>CodeOntology workflow</figcaption>
+        </figure>
+
+        <p>The tool generates rdf-compliant datasets in a N-TRIPLE format.</p>
+    </section>
+
+    <section class="datasets">
+        <h3>Datasets</h3>
+        <p>We have analysed 700+ repositories on Github, for a total of 15+ million LLOC.
+        Our dataset compromise more than 17 million triples.
+        Find out more of our ontology, or dive in the query interface.</p>
+
+        <a href="docs.html" class="btn btn-primary">Documentation</a>
+        <a href="query.html" class="btn btn-primary">Query</a>
+    </section>
+    </div>
+
+</body>
+</html>
