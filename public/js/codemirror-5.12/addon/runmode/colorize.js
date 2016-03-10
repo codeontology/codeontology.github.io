@@ -22,19 +22,28 @@
   }
 
   CodeMirror.colorize = function(collection, defaultMode) {
+     console.log("collection: " + !collection);
     if (!collection) collection = document.body.getElementsByTagName("pre");
 
+    console.log("collection length: " + collection.length);
     for (var i = 0; i < collection.length; ++i) {
+        console.log("i: " + i);
       var node = collection[i];
       var mode = node.getAttribute("data-lang") || defaultMode;
+      console.log("attr: " + node.getAttribute("data-lang"));
+      console.log("mode " + mode);
+      console.log("!mode " + !mode);
       if (!mode) continue;
 
       var text = [];
       textContent(node, text);
       node.innerHTML = "";
+      console.log("reset");
       CodeMirror.runMode(text.join(""), mode, node);
+      console.log("runmode set");
 
       node.className += " cm-s-default";
+      console.log("done");
     }
   };
 });
