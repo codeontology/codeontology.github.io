@@ -32,13 +32,12 @@ var query = function() {
         type: 'GET',
         crossDomain: true,
         dataType: 'jsonp',
-        data: {query: query}/*,
-        beforeSend: setHeader*/
+        data: {query: query}
     });
     request.success(function(data, textStatus, jqXHR) {
         var res = data;
         if (res.results.bindings[0] === undefined) {
-            restore();
+            emptyResults();
             return;
         }
 
@@ -75,6 +74,16 @@ var restore = function() {
 
 var clear = function() {
     $("#output").html("");
+}
+
+var emptyResults = function() {
+    var warning = "<div class='alert alert-dismissible alert-warning'>" +
+      "<button type='button' class='close' data-dismiss='alert'>X</button>" +
+      "<h4>Exception thrown at org.codeontology.NoResultsException...</h4>" +
+      "<p>Your search provided no results: try something different!</p>" +
+      "</div>";
+    $("#output").html(warning);
+    restore();
 }
 
 var populateTable = function(head, data) {
