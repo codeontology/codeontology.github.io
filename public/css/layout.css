@@ -3,8 +3,5 @@
 }
 
 footer {
-    position: fixed;
     width: 100%;
-    clear: both;
-    bottom: 0;
 }

@@ -1,5 +1,4 @@
 var mirror;
-var err;
 
 
 $(document).ready(function() {
