@@ -1,3 +1,7 @@
+var mirror;
+var err;
+
+
 $(document).ready(function() {
     var box = document.getElementById("mirror");
 
@@ -17,7 +21,6 @@ $(document).ready(function() {
 
 });
 
-var mirror;
 var query = function() {
     var url = "http://localhost:3030/tmp/query";
     var query = mirror.getValue();
@@ -28,12 +31,17 @@ var query = function() {
     var request = $.ajax({
         url: url,
         type: 'GET',
-        dataType: 'json',
-        data: {query: query}
+        crossDomain: true,
+        dataType: 'jsonp',
+        data: {query: query}/*,
+        beforeSend: setHeader*/
     });
     request.success(function(data, textStatus, jqXHR) {
         var res = data;
-        if (res.results.bindings[0] === undefined) return;
+        if (res.results.bindings[0] === undefined) {
+            restore();
+            return;
+        }
 
         if (res.head.vars.length > 0) {
             var columns = [res.head.vars];
@@ -50,6 +58,9 @@ var query = function() {
 
         populateTable(columns[0], lines);
         restore();
+    });
+    request.fail(function(jqXHR, textStatus, errorThrown) {
+        err = jqXHR;
     });
 };
 
