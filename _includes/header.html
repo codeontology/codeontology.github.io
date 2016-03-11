@@ -9,7 +9,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="{{ site.baseurl }}">CodeOntology</a>
+            <a class="navbar-brand page-scroll" href="{{ page.baseurl }}">CodeOntology</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -40,11 +40,11 @@
 						<h3>{{ page.subTitle }}</h3>
 						<hr class="intro-divider">
 						<ul class="list-inline intro-social-buttons">
-							{% for social in site.social %}
 							<li>
-								<a href="{{ social.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ social.title }} fa-fw"></i> <span class="network-name">{{ social.title }}</span></a>
+								<a href="{{ page.url }}#ontology" class="btn btn-default btn-lg"><i class=""></i> <span class="network-name">Ontology</span></a>
+								<a href="{{ page.url }}#framework" class="btn btn-default btn-lg"><i class=""></i> <span class="network-name">Framework</span></a>
+								<a href="{{ page.url }}#datasets" class="btn btn-default btn-lg"><i class=""></i> <span class="network-name">Datasets</span></a>
 							</li>
-							{% endfor %}
 						</ul>
 					</div>
 				</div>
