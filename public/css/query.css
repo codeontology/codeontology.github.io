@@ -1,0 +1,18 @@
+#editor {
+    position: absolute;
+    width: 75%;
+    min-height: 20%;
+}
+
+/* Long URIs */
+td {
+    word-break: break-all;
+}
+
+div.buttons {
+    margin-top: 10px;
+}
+
+#output {
+    margin-top: 15px;
+}
