@@ -7,13 +7,13 @@
 
 # Site settings
 title: CodeOntology
-email: davine@codeontology.com
+email: info@codeontology.org
 description: > # this means to ignore newlines until "baseurl:"
   CodeOntology is a semantic web ontology, extraction framework and dataset aggregator.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://codeontology.org" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+#twitter_username: jekyllrb
+#github_username:  codeontology #jekyll
 
 # Build settings
 markdown: kramdown
