@@ -21,9 +21,9 @@ $(document).ready(function() {
 });
 
 var query = function() {
-    var url = "http://swipe.unica.it/codeontology/query";
+    var url = "http://swipe.unica.it/3030/icsc16/query";
     var query = mirror.getValue();
-    
+
     // Wait for search...
     wait();
 
