@@ -3,6 +3,7 @@ var mirror;
 
 $(document).ready(function() {
     var box = document.getElementById("mirror");
+	if(!box) return; // skip if not found
 
     mirror = CodeMirror.fromTextArea(box, {
         mode: "application/sparql-query",

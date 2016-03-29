@@ -1,6 +1,9 @@
-<div id="content" class="container">
-<p>
-Run a query in this box. Check the <a href="docs.html">documentation</a> for more information.</p>
+---
+layout: standard
+title: SPARQL Query
+---
+
+Run a query in this box. Check the [documentation](docs) for more information.
 
 <textarea id="mirror" data-lang="sparql-query">
 prefix owl:<http://www.w3.org/2002/07/owl#>
@@ -17,11 +20,10 @@ LIMIT 25
 </textarea>
 
 <div class="buttons">
-    <a id="query" class="btn btn-primary">Query</a>
-    <a id="clear" class="btn btn-info">Clear</a>
+	<a id="query" class="btn btn-primary">Query</a>
+	<a id="clear" class="btn btn-info">Clear</a>
 </div>
 
-<div id="output">
-</div>
+<div id="output"></div>
 
-</div>
+

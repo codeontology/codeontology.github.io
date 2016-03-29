@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
-	{% include head.html %}
-
+	<head>
+		{% include head.html %}
+	</head>
 	<body>
 		{% include header.html %}
-		{% include page_slice.html %}
-		{% include contact.html %}
+		{% include slicer.html %}
+
+		{{ content }}
+
 		{% include footer.html %}
 	</body>
 </html>

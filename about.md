@@ -1,3 +1,9 @@
+---
+layout: standard
+title: About
+---
+
+
 <div id="about" class="about">
 <div class="jumbotron about">
     <h1>CodeOntology</h1>
@@ -59,4 +65,10 @@
 </div>
 </div>
 
+</div>
+
+
+
+<div class="container people">
+	{% include people.html %}
 </div>

@@ -1,4 +1,8 @@
-<div id="content" class="container">
+---
+layout: standard
+title: CodeOntology - Documentation
+---
+
 <section class="entities">
     <h3>Entities</h3>
     <p>CodeOntology maps the 1.8 specification of the Java language. Select one of the following items to find out its URI
@@ -271,4 +275,3 @@
         </div>
     </div>
 </section>
-</div>
