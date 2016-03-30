@@ -26,4 +26,12 @@ LIMIT 25
 
 <div id="output"></div>
 
+## Query examples
+### Recursion
+
+```
+SELECT ...
+```
+
+
 
