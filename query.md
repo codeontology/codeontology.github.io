@@ -28,8 +28,10 @@ LIMIT 25
 
 ## Query examples
 In the following a list of SPARQL queries.
+
 ### Recursion
 Example of Recursion
+
 ```
 SELECT ...
 ```
