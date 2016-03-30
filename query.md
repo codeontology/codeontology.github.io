@@ -27,8 +27,9 @@ LIMIT 25
 <div id="output"></div>
 
 ## Query examples
+In the following a list of SPARQL queries.
 ### Recursion
-
+Example of Recursion
 ```
 SELECT ...
 ```
