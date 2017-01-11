@@ -22,7 +22,7 @@ $(document).ready(function() {
 });
 
 var query = function() {
-    var url = "http://swipe.unica.it/3030/icsc16/query";
+    var url = "http://swipe.unica.it/fuseki/codeontology/query";
     var query = mirror.getValue();
 
     // Wait for search...
