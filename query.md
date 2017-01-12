@@ -11,12 +11,19 @@ prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>
 prefix woc:<http://rdf.webofcode.org/woc/>
 prefix dbpedia:<http://dbpedia.org/resource/>
+prefix woc:<http://rdf.webofcode.org/woc/>
 
-SELECT ?s ?p ?o
+
+SELECT *
+FROM <http://data.codeontology.org/graph/jdk8>
 WHERE {
-  ?s ?p ?o
+ ?class a  woc:Class.
+  ?method woc:declaredBy ?class.
+  ?method a woc:Method.
+  filter( regex(str(?method), "math"))
+  ?method rdf:comment ?description.
 }
-LIMIT 25
+LIMIT 10
 </textarea>
 
 <div class="buttons">
