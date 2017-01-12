@@ -13,15 +13,15 @@ prefix woc:<http://rdf.webofcode.org/woc/>
 prefix dbpedia:<http://dbpedia.org/resource/>
 prefix woc:<http://rdf.webofcode.org/woc/>
 
-
+# Get all methods in JDK8 with the keyword "math" in their description (javadoc)
 SELECT *
 FROM <http://data.codeontology.org/graph/jdk8>
 WHERE {
  ?class a  woc:Class.
   ?method woc:declaredBy ?class.
   ?method a woc:Method.
-  filter( regex(str(?method), "math"))
-  ?method rdf:comment ?description.
+  ?method rdfs:comment ?description.
+  filter( regex(str(?description), "math"))
 }
 LIMIT 10
 </textarea>
