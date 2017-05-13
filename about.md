@@ -24,25 +24,24 @@ title: About
     </p>
     <p>As the ontology expands to the Java layer, more domain-specific concepts are defined. The core layer defines concepts such as
     function and identifier, shared by every language; the language layer introduces variables and types; the object-oriented and Java
-    layer finally define methods, objects, prototypes, etc.<p>
+    layer finally define methods, objects, prototypes, etc.</p>
     <p>An hyerarchical structure leverages great flexibility, as it is easy to use its bottom layers to extend it to other languages,
     depending on the similarity with Java. For instance, a <a class="relevant">C</a> layer could be built on top of <i>language</i>,
     as it does not support the OO paradigm.</p>
 
     <h3 id="ontology">Extraction Tool</h3>
     <p>Our extraction tool crawls Java code provided it can be compiled: we currently support natively Gradle and Maven repositories,
-    and more can be analysed if a valid classpath is given.<p>
-    <p>We are currently analyzing repositories from Github, retrieved automatically through the Github API.<p>
+    and more can be analysed if a valid classpath is given.</p>
+    <p>We are currently analyzing repositories from Github, retrieved automatically through the Github API.</p>
 
     <h3 id="datasets">Datasets</h3>
     <p>Our extraction tool crawls Java code provided it can be compiled: we currently support natively Gradle and Maven repositories,
-    and more can be analysed if a valid classpath is given.<p>
+    and more can be analysed if a valid classpath is given.</p>
 
     <h3 id="dbpedia">DBPedia Spotlight</h3>
     <p><a href="http://wiki.dbpedia.org">DBPedia</a> offers an entity annotation REST service,
     <a href="https://github.com/dbpedia-spotlight/dbpedia-spotlight"> Spotlight</a>: we exploited the unstructured information in source
-    code by semantically tagging the Javadoc found in the repositories, providing one more abstraction layer to query.u<p>
-</div>
+    code by semantically tagging the Javadoc found in the repositories, providing one more abstraction layer to query.</p>
 
 <div class="container">
 <div class="infos row">
@@ -65,10 +64,8 @@ title: About
 </div>
 </div>
 
-</div>
-
-
-
 <div class="container people">
 	{% include people.html %}
+</div>
+</div>
 </div>

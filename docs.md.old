@@ -1,0 +1,277 @@
+---
+layout: standard
+title: CodeOntology - Documentation
+---
+
+<section class="entities">
+    <h3>Entities</h3>
+    <p>CodeOntology maps the 1.8 specification of the Java language. Select one of the following items to find out its URI
+    structure, data properties, and more.</p>
+
+    <div class="btn-group btn-group-justified first">
+    <a class="package btn btn-default" href="#package">Package</a>
+    </div>
+    <div class="btn-group btn-group-justified middle">
+    <a class="class btn btn-default" href="#class">Class</a>
+    <a class="interface btn btn-default" href="#interface">Interface</a>
+    </div>
+    <div class="btn-group btn-group-justified middle">
+    <a class="field btn btn-default" href="#field">Field</a>
+    <a class="method btn btn-default" href="#method">Method</a>
+    </div>
+    <div class="btn-group btn-group-justified middle">
+    <a class="var btn btn-default" href="#var">Local Variable</a>
+    <a class="lambda btn btn-default" href="#lambda">Lambda</a>
+    </div>
+    <div class="btn-group btn-group-justified last">
+    <a class="parameter btn btn-default" href="#parameter">Parameter</a>
+    </div>
+
+    <br/>
+
+    <div class="docs">
+        <div id="package" class="panel panel-warning">
+        <div class="panel-heading">
+        <h3 class="panel-title">Package documentation</h3>
+        </div>
+        <div class="panel-body">
+        <div class="structure"><span class="prefix">woc:</span><span class="URI">package</span></div>
+        <div class="properties">
+            <div class="data-property">
+            <p><span class="URI-label">name</span> <span class="range">String</span></p>
+            <div class="description"><p>Package data property</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">package</span> <span class="range">woc:Class | woc:Interface</span></p>
+            <div class="description"><p>Type(s) in the package.</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">rdfs:comment</span> <span class="range">String</span></p>
+            <div class="description"><p>JavaDoc comment.</p></div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <div id="class" class="panel panel-danger">
+        <div class="panel-heading">
+        <h3 class="panel-title">Class documentation</h3>
+        </div>
+        <div class="panel-body">
+        <div class="structure"><span class="prefix">woc:</span><span class="URI">package_simpleName</span></div>
+        <div class="properties">
+            <div class="data-property">
+            <p><span class="URI-label">name</span> <span class="range">String</span></p>
+            <div class="description"><p>Package data property</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">extends</span> <span class="range">woc:Class</span></p>
+            <div class="description"><p>Extended class.</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">implements</span> <span class="range">woc:Class</span></p>
+            <div class="description"><p>Implemented interface.</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">encapsulation</span> <span class="range">woc:Modifier</span></p>
+            <div class="description"><p>Encapsulation, as in visibility modifiers.</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">rdfs:comment</span> <span class="range">String</span></p>
+            <div class="description"><p>JavaDoc comment.</p></div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <div id="interface" class="panel panel-success">
+        <div class="panel-heading">
+        <h3 class="panel-title">Interface documentation</h3>
+        </div>
+        <div class="panel-body">
+        <div class="structure"><span class="prefix">woc:</span><span class="URI">package_simpleName</span></div>
+        <div class="properties">
+            <div class="data-property">
+            <p><span class="URI-label">name</span> <span class="range">String</span></p>
+            <div class="description"><p>Package data property</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">extends</span> <span class="range">woc:Interface</span></p>
+            <div class="description"><p>Extended interface.</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">encapsulation</span> <span class="range">woc:Modifier</span></p>
+            <div class="description"><p>Encapsulation, as in visibility modifiers.</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">rdfs:comment</span> <span class="range">String</span></p>
+            <div class="description"><p>JavaDoc comment.</p></div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <div id="field" class="panel panel-danger">
+        <div class="panel-heading">
+        <h3 class="panel-title">Field documentation</h3>
+        </div>
+        <div class="panel-body">
+        <div class="structure"><span class="prefix">woc:</span><span class="URI">package_declaringTypeSimpleName_fieldSimpleName</span></div>
+        <div class="properties">
+            <div class="data-property">
+            <p><span class="URI-label">name</span> <span class="range">String</span></p>
+            <div class="description"><p>Package data property</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">declared_by</span> <span class="range">woc:Class</span></p>
+            <div class="description"><p>Declaring class.</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">encapsulation</span> <span class="range">woc:Modifier</span></p>
+            <div class="description"><p>Encapsulation, as in visibility modifiers.</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">has_modifier</span> <span class="range">woc:Modifier</span></p>
+            <div class="description"><p>Modifiers.</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">requests</span> <span class="range">woc:Method</span></p>
+            <div class="description"><p>Method invoked.</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">requests</span> <span class="range">woc:Class | woc:Interface</span></p>
+            <div class="description"><p>Type referenced.</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">requests</span> <span class="range">woc:Field</span></p>
+            <div class="description"><p>Field accessed.</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">value</span> <span class="range">woc:Expression</span></p>
+            <div class="description"><p>Default value.</p></div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <div id="method" class="panel panel-info">
+        <div class="panel-heading">
+        <h3 class="panel-title">Method documentation</h3>
+        </div>
+        <div class="panel-body">
+        <div class="structure"><span class="prefix">woc:</span><span class="URI">package_declaringType_methodSimpleName_ID</span></div>
+        <div class="properties">
+            <div class="data-property">
+            <p><span class="URI-label">name</span> <span class="range">String</span></p>
+            <div class="description"><p>Package data property</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">declared_by</span> <span class="range">woc:Class</span></p>
+            <div class="description"><p>Declaring class.</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">returns</span> <span class="range">woc:Class | woc:Interface</span></p>
+            <div class="description"><p>Returrn type.</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">encapsulation</span> <span class="range">woc:Modifier</span></p>
+            <div class="description"><p>Encapsulation, as in visibility modifiers.</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">has_modifier</span> <span class="range">woc:Modifier</span></p>
+            <div class="description"><p>Modifiers.</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">has_parameter</span> <span class="range">woc:Parameter</span></p>
+            <div class="description"><p>Method's parameters.</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">returns_var</span> <span class="range">woc:Variable</span></p>
+            <div class="description"><p>Local variable returned by the method.</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">constructs</span> <span class="range">woc:Constructor</span></p>
+            <div class="description"><p>Constructor invoked.</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">requests</span> <span class="range">woc:Method</span></p>
+            <div class="description"><p>Method invoked.</p></div>
+            </div>
+            <div class="data-property">
+                <p><span class="URI-label">throws</span> <span class="range">woc:Class | woc:Interface</span></p>
+                <div class="description"><p>Checked exception thrown.</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">requests</span> <span class="range">woc:Class | woc:Interface</span></p>
+            <div class="description"><p>Type referenced.</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">requests</span> <span class="range">woc:Field</span></p>
+            <div class="description"><p>Field accessed.</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">rdfs:comment</span> <span class="range">String</span></p>
+            <div class="description"><p>JavaDoc comment.</p></div>
+            </div>
+        </div>
+                    </div>
+        </div>
+
+        <div id="var" class="panel panel-info">
+        <div class="panel-heading">
+        <h3 class="panel-title">Local  variable documentation</h3>
+        </div>
+        <div class="panel-body">
+        <div class="structure"><span class="prefix">woc:</span><span class="URI">package_declaringType_methodSimpleName_ID_variableSimpleName</span></div>
+        <div class="properties">
+            <div class="data-property">
+            <p><span class="URI-label">name</span> <span class="range">String</span></p>
+            <div class="description"><p>Package data property</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">declared_by</span> <span class="range">woc:Method</span></p>
+            <div class="description"><p>Declaring method.</p></div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <div id="lambda" class="panel panel-info">
+        <div class="panel-heading">
+        <h3 class="panel-title">Lambda documentation</h3>
+        </div>
+        <div class="panel-body">
+        <div class="structure"><span class="prefix">woc:</span><span class="URI">package_declaringType_methodSimpleName_ID</span></div>
+        <div class="properties">
+            <div class="data-property">
+            <p><span class="URI-label">lambda_implementing</span> <span class="range">woc:Interface</span></p>
+            <div class="description"><p>Implemented functional interface.</p></div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <div id="parameter" class="panel panel-info">
+        <div class="panel-heading">
+        <h3 class="panel-title">Parameter documentation</h3>
+        </div>
+        <div class="panel-body">
+        <div class="structure"><span class="prefix">woc:</span><span class="URI">package_declaringType_methodSimpleName_formalName_index</span></div>
+        <div class="properties">
+            <div class="data-property">
+            <p><span class="URI-label">name</span> <span class="range">String</span></p>
+            <div class="description"><p>Package data property</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">type</span> <span class="range">woc:Class | woc:Interface</span></p>
+            <div class="description"><p>Formal type.</p></div>
+            </div>
+            <div class="data-property">
+            <p><span class="URI-label">parameter_position</span> <span class="range">Int</span></p>
+            <div class="description"><p>Index.</p></div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+</section>
