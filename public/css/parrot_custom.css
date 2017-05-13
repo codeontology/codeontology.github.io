@@ -38,7 +38,7 @@ div.term a{
 }
 
 div.term > div{
-    border-top: 3px groove red;
+    border-top: 1px groove #cccccc;
     margin: 0px;
     padding: 1em;
     margin-right:1em;
@@ -53,7 +53,7 @@ div.term > div{
 
 div.toc , div#prologue , div#appendix{
 	padding: 0em 0em 0em 0em;
-    margin: 2em -2em 0em -2em;
+    margin: 3em -2em 3em -2em;
 }
 
 dt{
