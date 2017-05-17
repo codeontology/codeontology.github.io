@@ -70,3 +70,7 @@
 .info .relevant {
     font-size: 2em;
 }
+
+h1 {
+    padding-bottom: 32px;
+}

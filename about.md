@@ -10,39 +10,33 @@ title: About
     <p>CodeOntology is a building block of the Web of Code, an attempt to leverage code in a semantic framework.</p>
     <p>Our framework is composed of three actors:
         <ul>
-            <li><a class="relevant">Ontology</a></li>
-            <li><a class="relevant">Extraction framework</a></li>
-            <li><a class="relevant">Datasets</a></li>
+            <li><a class="relevant" href="#ontology">Ontology</a></li>
+            <li><a class="relevant" href="#parser">Parser</a></li>
+            <li><a class="relevant" href="#datasets">Datasets</a></li>
         </ul>
     </p>
-    <h3 id="ontology">Ontology</h3>
-    <p>We started with one goal in mind: create the DBPedia of source code. We have built our ontology on four layers.
-        <figure class="left">
-        <img alt="Architectural structure" src="public/img/stack.png" style="max-width: 180px;">
-        <figcaption>Architectural structure.</figcaption>
-        </figure>
-    </p>
-    <p>As the ontology expands to the Java layer, more domain-specific concepts are defined. The core layer defines concepts such as
-    function and identifier, shared by every language; the language layer introduces variables and types; the object-oriented and Java
-    layer finally define methods, objects, prototypes, etc.</p>
-    <p>An hyerarchical structure leverages great flexibility, as it is easy to use its bottom layers to extend it to other languages,
-    depending on the similarity with Java. For instance, a <a class="relevant">C</a> layer could be built on top of <i>language</i>,
-    as it does not support the OO paradigm.</p>
 
-    <h3 id="ontology">Extraction Tool</h3>
-    <p>Our extraction tool crawls Java code provided it can be compiled: we currently support natively Gradle and Maven repositories,
-    and more can be analysed if a valid classpath is given.</p>
-    <p>We are currently analyzing repositories from Github, retrieved automatically through the Github API.</p>
+    <h3 id="ontology">The Ontology</h3>
+    <p>The ontology is designed to model the domain of object-oriented programming languages. It is written in OWL 2 and is mainly focused towards the Java programming language, but it can be easily reused to represent more languages.
+    The modelling process underlying the creation of the ontology has
+    been guided by common competency questions that usually arise during software
+    process and has been inspired by a re-engineering of the Java abstract syntax.
+    The ontology is available on <a class="relevant" href="https://doi.org/10.5281/zenodo.577939">Zenodo</a> under <a class="relevant" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> license.
+    </p>
+
+    <h3 id="parser">The Parser</h3>
+    <p>The parser analyzes Java code to serialize it into RDF triples. It is able  to  extract  structural  information common to all object-oriented programming languages, like class hierarchy, methods and constructors. Optionally, it can also serialize into RDF triples all the  statements  and  expressions,  thereby  providing  a  complete  RDF-ization  of source code.
+    <br/>
+    CodeOntology  currently  supports natively both  Maven  and  Gradle  projects.
+    The RDF serialization of a Java project acts in three steps: first the project is analyzed to download all of its dependencies and load them in class path, then an abstract syntax tree of the source code and its dependencies is built and processed to extract a set of RDF triples.
+    <br/>
+    The parser, along with a tutorial on how to use it to extract a knowledge base from any Java project, is available on <a class="relevant" href="https://github.com/codeontology/parser">GitHub</a>.
+    </p>
 
     <h3 id="datasets">Datasets</h3>
-    <p>Our extraction tool crawls Java code provided it can be compiled: we currently support natively Gradle and Maven repositories,
-    and more can be analysed if a valid classpath is given.</p>
+    <p>We are currently applying the parser to analyze repositories from GitHub, retrieved automatically through the GitHub API. We have also applied the parser to extract RDF triples from the <a class="relevant" href="http://openjdk.java.net/">OpenJDK 8</a> source code. The resulting dataset is available for download on <a class="relevant" href="http://doi.org/10.5281/zenodo.579977">Zenodo</a> and can be queried through our remote <a class="relevant" href="http://query.codeontology.org/sparql">SPARQL endpoint</a>.</p>
 
-    <h3 id="dbpedia">DBPedia Spotlight</h3>
-    <p><a href="http://wiki.dbpedia.org">DBPedia</a> offers an entity annotation REST service,
-    <a href="https://github.com/dbpedia-spotlight/dbpedia-spotlight"> Spotlight</a>: we exploited the unstructured information in source
-    code by semantically tagging the Javadoc found in the repositories, providing one more abstraction layer to query.</p>
-
+<!--
 <div class="container">
 <div class="infos row">
     <div class="info col-md-3">
@@ -63,9 +57,12 @@ title: About
     </div>
 </div>
 </div>
+-->
 
 <div class="container people">
 	{% include people.html %}
 </div>
 </div>
 </div>
+
+<script src="public/js/scroller.js"></script>
