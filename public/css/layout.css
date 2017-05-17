@@ -20,3 +20,7 @@ a.relevant {
 .big {
     font-size: 2em;
 }
+
+div.mdcontent {
+	padding: 2em;
+}
