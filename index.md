@@ -82,7 +82,6 @@ title: SPARQL Queries over Source Code
 					</ul>
 				</div>
 			</div>
-
 		</div>
 	</div>
 </section>

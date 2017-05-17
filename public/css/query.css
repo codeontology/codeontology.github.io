@@ -10,9 +10,18 @@ td {
 }
 
 div.buttons {
-    margin-top: 10px;
+    margin-top: 3em;
 }
 
 #output {
     margin-top: 15px;
+}
+
+#query-container {
+	margin: 32px;
+}
+
+#div-instructions {
+	margin-top: 16px;
+	margin-bottom: 16px;
 }
