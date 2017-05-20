@@ -34,7 +34,7 @@ title: About
     </p>
 
     <h3 id="datasets">Datasets</h3>
-    <p>We are currently applying the parser to analyze repositories from GitHub, retrieved automatically through the GitHub API. We have also applied the parser to extract RDF triples from the <a class="relevant" href="http://openjdk.java.net/">OpenJDK 8</a> source code. The resulting dataset is available for download on <a class="relevant" href="http://doi.org/10.5281/zenodo.579977">Zenodo</a> and can be queried through our remote <a class="relevant" href="http://query.codeontology.org/sparql">SPARQL endpoint</a>.</p>
+    <p>We are currently applying the parser to analyze repositories from GitHub, retrieved automatically through the GitHub API. We have also applied the parser to extract RDF triples from the <a class="relevant" href="http://openjdk.java.net/">OpenJDK 8</a> source code. The resulting dataset is available for download on <a class="relevant" href="http://doi.org/10.5281/zenodo.579977">Zenodo</a> and can be queried through our remote <a class="relevant" href="{{ site.baseurl }}/query">SPARQL endpoint</a>.</p>
 
 <!--
 <div class="container">

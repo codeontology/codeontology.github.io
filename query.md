@@ -19,7 +19,6 @@ PREFIX dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#>
 
 # Get all methods in OpenJDK 8 computing the cube root of a parameter of type double
 SELECT ?method
-FROM <http://query.codeontology.org/sparql/OpenJDK8>
 WHERE {
   ?method a woc:Method ;
           woc:hasParameter/woc:hasType woc:Double ; 
