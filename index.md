@@ -77,7 +77,7 @@ title: SPARQL Queries over Source Code
 				<div class="col-lg-6">
 					<ul class="list-inline banner-social-buttons">
 						<li><a href="{{ site.baseurl }}/docs" class="btn btn-default btn-lg">Docs</a></li>
-						<li><a href="{{ site.baseurl }}/query" class="btn btn-default btn-lg">Query</a></li>
+						<li><a href="{{ site.baseurl }}/sparql" class="btn btn-default btn-lg">Query</a></li>
 						<li><a href="{{ site.baseurl }}/about" class="btn btn-default btn-lg">About</a></li>
 					</ul>
 				</div>
