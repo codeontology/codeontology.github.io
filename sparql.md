@@ -5,7 +5,7 @@ title: SPARQL Query
 <div id="query-container">
 <div id="div-instructions">
 Run a query in this box. <br/>
-Check the <a href="{{ site.baseurl }}/docs">documentation</a> and the <a href="{{ site.baseurl }}/examples">examples</a> for more details.
+Check the <a href="{{ site.baseurl }}/doc">documentation</a> and the <a href="{{ site.baseurl }}/examples">examples</a> for more details.
 </div>
 
 <textarea id="mirror" data-lang="sparql-query">
