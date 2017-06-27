@@ -10,7 +10,7 @@ It is available on <a class="relevant" href="https://github.com/codeontology/par
 </p>
 <p>
 The following image shows an excerpt of the output of the parser, when it is applied to a simple Hello World program.
-For more details, see the <a class="relevant" href="{{ site.baseurl }}/docs">documentation</a> and the <a class="relevant" href="{{ site.baseurl }}/samples">query examples</a>.
+For more details, see the <a class="relevant" href="{{ site.baseurl }}/docs">documentation</a> and the <a class="relevant" href="{{ site.baseurl }}/examples">query examples</a>.
 </p>
 <img id="helloCodeOntology" alt="" src="public/img/helloCodeOntology.jpg" class="profile">
 <p>
